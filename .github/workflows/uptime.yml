@@ -1,0 +1,26 @@
+# Checks the CallBird server every 5 minutes. If it's down, this run fails and GitHub emails you.
+name: Server uptime
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Is callbird.fly.dev answering?
+        run: |
+          for attempt in 1 2 3; do
+            if curl -fsS --max-time 15 https://callbird.fly.dev/health | grep -q '"ok":true'; then
+              echo "Server is up"; exit 0
+            fi
+            echo "Attempt $attempt failed; retrying in 20 seconds"
+            sleep 20
+          done
+          echo "::error::CallBird server is DOWN: https://callbird.fly.dev/health isn't answering. Calls go to the voicemail backup until it's back."
+          exit 1
