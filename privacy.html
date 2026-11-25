@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CallBird Privacy Policy</title>
-<meta name="description" content="How CallBird handles your calls, contacts and account information.">
+<meta name="description" content="How CallBird handles your calls, contacts, account and business information.">
 <link rel="icon" href="icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -13,10 +13,11 @@
 <header><img src="icon.png" alt=""><a href="./">CallBird</a></header>
 
 <h1>Privacy Policy</h1>
-<p class="muted">Effective November 22, 2026</p>
+<p class="muted">Effective November 25, 2026</p>
 
 <p>CallBird is an iPhone app with an AI assistant that answers the calls you miss or decline, talks with the caller,
-and sends you a summary. This policy explains what information CallBird handles, why, who it's shared with, and
+and sends you a summary. With <strong>CallBird Business</strong>, the assistant can also answer as your business: it
+books appointments into a calendar in the app or takes pickup orders. This policy explains what information CallBird handles, why, who it's shared with, and
 how you can delete it. In this policy, "CallBird", "we" and "us" mean the CallBird team that runs the app.</p>
 
 <p><strong>The short version:</strong> we use your information only to run CallBird for you. Your calls and contacts
@@ -48,13 +49,37 @@ are visible only to you. We don't sell your information, don't use it for advert
 <em>greeting by name</em>, the names and numbers of your contacts are sent to our server so your assistant can greet
 people you know by name. You can turn this off at any time, which deletes them from our server.</p>
 
-<h3>Subscription</h3>
+<h3>CallBird Business (only if you use it)</h3>
+<p>If you turn on business mode, we also keep:</p>
+<ul>
+  <li><strong>Your business details</strong>: the business name, address, opening hours, days closed, services and
+      prices or your menu, booking rules, and the information you give your assistant to answer questions. If you take
+      a photo of your menu, it's sent to our AI provider to read the items and prices; we keep the items, not the photo.</li>
+  <li><strong>Your customers' bookings, orders and waitlist</strong>: the name and phone number your customers give, the
+      service or items, the time, any notes, and the status. They come from calls your assistant takes or that you add
+      yourself.</li>
+  <li><strong>Customer history</strong>: past bookings and orders are matched by phone number so your assistant can
+      recognize returning customers (it asks to confirm who's calling before using a name) and so you can see a
+      customer list and your monthly stats.</li>
+  <li><strong>Time you block off</strong> on your calendar, with the reason you type.</li>
+</ul>
+<p>Your assistant takes pickup orders that are paid at pickup. It never asks for or takes card numbers or other payment
+details on the phone.</p>
+<p><strong>Calendar sync:</strong> if you choose to show your bookings in Apple Calendar, Google Calendar or another
+calendar app, we create a private link to a calendar feed of your bookings (customer names, phone numbers and notes) and
+blocked time. Your calendar provider fetches it from that link, and their own privacy policy covers what they do with
+it. Anyone who has the link can see the feed, so keep it private. You can make a new link in the app at any time,
+which stops the old one from working.</p>
+
+<h3>Subscription and purchases</h3>
 <p>Payments are handled by Apple. We never see your card or Apple account details. To check whether your subscription
-is active, the app uses RevenueCat with a random ID that isn't your phone number or name.</p>
+is active and which minute packs you've bought, the app uses RevenueCat with a random ID that isn't your phone number
+or name.</p>
 
 <h3>Notifications</h3>
 <p>If you allow notifications, Apple gives the app a device token, which we store on your account so we can alert you
-when a call ends. Signing out removes it.</p>
+when a call ends, and, with CallBird Business, about new bookings, orders, waitlist openings, a morning summary of
+your day, and when your minutes run low. Signing out removes it.</p>
 
 <h3>What we don't collect</h3>
 <p>No advertising IDs, no location, no tracking across other apps or websites, and no analytics or advertising SDKs.</p>
@@ -62,8 +87,10 @@ when a call ends. Signing out removes it.</p>
 <h2>How we use it</h2>
 <ul>
   <li>To answer calls on your behalf, talk with callers, and summarize the calls for you.</li>
+  <li>With CallBird Business: to tell callers your free times or menu, book appointments and take pickup orders, keep
+      your calendar, waitlist and customer list, recognize returning customers, and show you what your assistant did.</li>
   <li>To spot likely scam and spam calls and block numbers you choose.</li>
-  <li>To sign you in, keep your account secure, and enforce usage limits (such as monthly AI minutes).</li>
+  <li>To sign you in, keep your account secure, and enforce usage limits (monthly AI minutes and minute packs).</li>
   <li>To check your subscription and send you call notifications.</li>
   <li>To respond when you contact support.</li>
 </ul>
@@ -75,9 +102,10 @@ They process it on our behalf and may not use it for their own purposes.</p>
   <tr><th>Provider</th><th>What for</th><th>What they receive</th></tr>
   <tr><td>Twilio</td><td>Phone numbers, connecting calls, sign-in text codes, voicemail backup</td><td>Phone numbers, call audio, voicemail recordings</td></tr>
   <tr><td>Deepgram</td><td>Turning speech into text</td><td>Call audio while the call happens, voicemail audio</td></tr>
-  <tr><td>OpenRouter, Anthropic (Claude) and ElevenLabs</td><td>The assistant's replies, call summaries, and its voice</td><td>Transcript text, your assistant settings, and contact names when greeting by name is on</td></tr>
+  <tr><td>OpenRouter, Anthropic (Claude) and ElevenLabs</td><td>The assistant's replies, call summaries, reading bookings and orders from calls, reading menu photos, and its voice</td><td>Transcript text, your assistant settings, contact names when greeting by name is on, and with CallBird Business your business details, free times, menu, a returning caller's past bookings or orders, and menu photos you upload</td></tr>
   <tr><td>Apple</td><td>Subscriptions and notifications</td><td>Purchase info (handled by Apple), the text of call notifications</td></tr>
-  <tr><td>RevenueCat</td><td>Checking subscription status</td><td>A random account ID and App Store purchase records</td></tr>
+  <tr><td>RevenueCat</td><td>Checking subscriptions and minute packs</td><td>A random account ID and App Store purchase records</td></tr>
+  <tr><td>Your calendar app (only if you turn on calendar sync)</td><td>Showing your bookings next to your other events</td><td>The calendar feed of your bookings and blocked time</td></tr>
   <tr><td>Hosting providers</td><td>Running our server</td><td>Data stored on and passing through the server</td></tr>
 </table>
 <p>We may also share information if the law requires it, or to protect the safety of people or the service.
@@ -87,21 +115,33 @@ If CallBird is ever involved in a merger or sale, your information would stay un
 <h2>Other users</h2>
 <p>Each CallBird account is separate. Other users can't see your calls, transcripts, contacts or settings.</p>
 
-<h2>A note about callers</h2>
+<h2>A note about callers and customers</h2>
 <p>People who call you talk with an AI assistant, and the assistant tells them so at the start of the call.
 What they say is transcribed and summarized for you. Callers can hang up at any time. If you're a caller and want
 something you said deleted, contact the CallBird user you called, or email us.</p>
+<p>If you called a business that uses CallBird Business, the business decides what to do with your booking or order
+and is responsible for the information it keeps about its customers. We keep that information only to run CallBird
+for that business. To ask for your details to be changed or deleted, contact the business, or email us and we'll pass
+your request on.</p>
+<p><strong>If you use CallBird Business</strong>, you're responsible for having a lawful reason to keep your customers'
+information and for answering their requests about it, for example by deleting a booking in the app.</p>
 
 <h2>How long we keep it</h2>
 <ul>
   <li>Calls stay until you delete them. You can delete any call in the app.</li>
-  <li><strong>Delete account</strong> (Settings in the app) deletes your account, calls, contacts and settings
-      right away and releases your assistant number.</li>
+  <li>CallBird Business: bookings, orders and blocked time are deleted automatically about 4 months after their date,
+      and waitlist entries after about 6 weeks. You can cancel or remove them sooner in the app. Turning business mode
+      off stops new bookings and orders; your business details stay so you can turn it back on, until you delete your
+      account (or email us to delete them).</li>
+  <li><strong>Delete account</strong> (Settings in the app) deletes your account, calls, contacts, settings and all
+      business information (bookings, orders, waitlist, customers, menu and calendar link) right away and releases
+      your assistant number.</li>
   <li>If your subscription ends, your assistant number is kept for 90 days in case you come back, then released.
       Your calls, contacts and settings are deleted 30 days after that.</li>
   <li>To prevent abuse of free minutes and phone numbers, after you delete your account we keep a small record of
-      your phone number, the assistant number it had, when it got that number, and the minutes you used that
-      month. It holds nothing else: no calls, contacts or settings.</li>
+      your phone number, the assistant number it had, when it got that number, the minutes you used, and the minute
+      packs you bought (so you don't lose minutes you paid for if you come back). It holds nothing else: no calls,
+      contacts, settings or business information.</li>
   <li>Service providers may keep limited records (such as call logs or billing records) for the time their own
       legal and security obligations require.</li>
 </ul>
@@ -109,8 +149,10 @@ something you said deleted, contact the CallBird user you called, or email us.</
 <h2>Your choices and rights</h2>
 <ul>
   <li><strong>See</strong> your calls and settings in the app at any time.</li>
-  <li><strong>Delete</strong> single calls, your shared contacts, or your whole account in the app.</li>
-  <li><strong>Turn off</strong> notifications or greeting by name at any time.</li>
+  <li><strong>Delete</strong> single calls, your shared contacts, or your whole account in the app. With CallBird
+      Business you can also cancel bookings and orders, remove people from the waitlist, remove blocked time, and make
+      a new calendar link.</li>
+  <li><strong>Turn off</strong> notifications, greeting by name, business mode or the morning summary at any time.</li>
   <li>Depending on where you live (for example California or the EU), you may have rights to access, correct,
       delete or get a copy of your information. Email us and we'll help within 30 days.</li>
 </ul>
